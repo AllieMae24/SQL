@@ -35,9 +35,8 @@ FROM superstore
 ORDER BY price; 
 
 --Show a statistic about the item prices.
-SELECT item_name, AVG(price)
-FROM superstore
-GROUP BY item_name;
+SELECT AVG(price)
+FROM superstore;
 
 --Show a statistic about the item prices in the category of "Kitchen Supplies".
 SELECT item_name, MIN(price) 
